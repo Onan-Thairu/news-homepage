@@ -6,7 +6,7 @@
 }
 
 .container {
-  border: 2px solid #111;
+  /* border: 2px solid #111; */
   margin: 4% 10%;
 }
 
@@ -32,7 +32,8 @@ nav a:hover {
 
 .content {
   display: grid;
-  gap: 10px;
+  gap: 20px;
+  height: 98vh;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: 
@@ -56,7 +57,7 @@ nav a:hover {
   justify-content: space-around;
   background-color: hsl(240, 100%, 5%);
   color: fff;
-  /* grid-area: two; */
+  grid-area: two;
 }
   .two h2 {
   color: hsl(35, 77%, 62%);
@@ -83,7 +84,8 @@ nav a:hover {
 }
   .four p {
     color: hsl(233, 8%, 79%);
-    font-size: .5rem;
+    font-size: .7rem;
+    margin-bottom: 10px;
   }
   .four button {
     color: fff;
@@ -101,7 +103,7 @@ p .number {
 }
   .five img {
     width: 50px;
-    height: 60px;
+    height: 100%;
   }
   .five h4 {
     color: hsl(240, 100%, 5%);
@@ -109,11 +111,12 @@ p .number {
 
 .six {
   display: flex;
+  align-items: center;
   grid-area: six;
 }
   .six img {
     width: 50px;
-    height: 60px;
+    height: 100%;
   }
   .six h4 {
     color: hsl(240, 100%, 5%);
@@ -121,11 +124,13 @@ p .number {
 
 .seven {
   display: flex;
+  align-items: center;
   grid-area: seven;
+  background-color: aqua;
 }
   .seven img {
-    width: 50px;
-    height: 60px;
+    width: 60px;
+    height: 100%;
   }
   .seven h4 {
     color: hsl(240, 100%, 5%);
