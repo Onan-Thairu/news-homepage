@@ -7,7 +7,7 @@
 
 .container {
   border: 2px solid #111;
-  margin: 4% 4%;
+  margin: 4% 10%;
 }
 
 .logo img {
@@ -27,5 +27,106 @@ nav a {
 }
 
 nav a:hover {
-  color: hsl(35, 77%, 62%);
+  color: hsl(5, 85%, 63%);
 }
+
+.content {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "one one two"
+  "three four two"
+  "five six seven"
+  ;
+}
+
+.one {
+  grid-area: one;
+}
+
+.one img {
+  width: 100%;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: hsl(240, 100%, 5%);
+  color: fff;
+  /* grid-area: two; */
+}
+  .two h2 {
+  color: hsl(35, 77%, 62%);
+  }
+  .two h3 {
+    font-size: .8rem;
+  }
+  .two p {
+    font-size: .5rem;
+  }
+  .two .even {
+  color: hsl(35, 77%, 62%);
+  }
+
+.three {
+  grid-area: three;
+}
+  .three h1 {
+    font-weight: 900;
+  }
+
+.four {
+  grid-area: four;
+}
+  .four p {
+    color: hsl(233, 8%, 79%);
+    font-size: .5rem;
+  }
+  .four button {
+    color: fff;
+    background-color: hsl(240, 100%, 5%);
+    padding: 5px 10px;
+  }
+
+p .number {
+  color: hsl(36, 100%, 99%);
+}
+
+.five {
+  display: flex;
+  grid-area: five;
+}
+  .five img {
+    width: 50px;
+    height: 60px;
+  }
+  .five h4 {
+    color: hsl(240, 100%, 5%);
+  }
+
+.six {
+  display: flex;
+  grid-area: six;
+}
+  .six img {
+    width: 50px;
+    height: 60px;
+  }
+  .six h4 {
+    color: hsl(240, 100%, 5%);
+  }
+
+.seven {
+  display: flex;
+  grid-area: seven;
+}
+  .seven img {
+    width: 50px;
+    height: 60px;
+  }
+  .seven h4 {
+    color: hsl(240, 100%, 5%);
+  }
